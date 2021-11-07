@@ -12,19 +12,48 @@
 <body>
 	<div class="main-signin">
 		<div class="main-signin__head">
-			<p>АВТОРИЗАЦИЯ</p>
+			<p>REGISTRATION</p>
 		</div>
 		<div class="main-signin__middle">
-			<div class="middle__form">
-				<input type="text" class="item" placeholder="Логин">
-				<input type="email" class="item" placeholder="Email">
-				<input type="password" class="item" placeholder="Пароль">
-				<input type="submit" value="ВОЙТИ">
+			<div class="middle__form item_section">
+				<div class="item_box">
+					<input type="text" name="company" class="item" placeholder="Company">
+				</div>
+				<div class="item_box">
+					<input type="text" name="first_name" class="item" placeholder="First Name">
+				</div>
+				<div class="item_box">
+					<input type="text" name="last_name" class="item" placeholder="Last Name">
+				</div>
+				<div class="item_box">
+					<input id="email" type="email" name="email" class="item" placeholder="Email">
+				</div>
+				<div class="item_box">
+					<input id="phone" type="text" name="phone" class="item" placeholder="Phone">
+				</div>
+			</div>
+
+			<div class="middle__form item_section">
+				<div class="item_box">
+					<input type="text" name="address" class="item" placeholder="Address">
+				</div>
+				<div class="item_box">
+					<input type="password" name="password" class="item" placeholder="Password">
+				</div>
+				<div class="item_box description_box">
+					<textarea type="text" name="description" class="item" placeholder="Description"></textarea>
+				</div>
 			</div>
 		</div>
+
+		<div class="button_section">
+			<button type="button" class="btn btn_clear">Clear</button>
+			<button type="button" class="btn btn_submit">Submit</button>
+		</div>
+
 		<div class="main-signin__foot">
 			<div class="foot__left">
-				<p>Войти через:</p>
+				<p>Enter with:</p>
 			</div>
 			<div class="foot__right">
 				<div class="twit"><a href="#"></a></div>
@@ -33,5 +62,8 @@
 		</div>
 	</div>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.14/dist/jquery-input-mask-phone-number.js"></script>
+	<script src="./js/index.js"></script>
 </body>
 </html>
